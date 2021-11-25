@@ -1,0 +1,18 @@
+﻿<Window x:Class="TurkkepFaturaIslemleri.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TurkkepFaturaIslemleri"
+        mc:Ignorable="d"
+        Title="Türkkep Fatura İşlemleri (Listeleme ve Görüntüleme)" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Height="22" Margin="10,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="139" ToolTip="Kullanıcı Adı"/>
+        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Height="22" Margin="10,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="139" RenderTransformOrigin="0.676,2.682" ToolTip="Şifre"/>
+        <Button x:Name="btnLogin" Content="Giriş" HorizontalAlignment="Left" Height="49" Margin="154,14,0,0" VerticalAlignment="Top" Width="107" Click="Button_Click"/>
+        <Button x:Name="btnBakiyeSorgula" Content="Bakiye Sorgula" HorizontalAlignment="Left" Height="49" Margin="277,14,0,0" VerticalAlignment="Top" Width="96" Visibility="Hidden" Click="btnBakiyeSorgula_Click"/>
+        <Label x:Name="lblBakiyeBilgi" HorizontalAlignment="Left" Height="61" VerticalAlignment="Top" Width="151" Margin="631,14,0,0"/>
+        <Button x:Name="btnFaturalariGetir" Content="Faturaları Getir" HorizontalAlignment="Left" Height="49" Margin="391,14,0,0" VerticalAlignment="Top" Width="126" Visibility="Hidden" Click="btnFaturalariGetir_Click"/>
+        <DataGrid x:Name="dgFaturalar" Margin="15,98,10,10" GridLinesVisibility="None" IsReadOnly="True" MouseDoubleClick="dgFaturalar_MouseDoubleClick"/>
+    </Grid>
+</Window>
